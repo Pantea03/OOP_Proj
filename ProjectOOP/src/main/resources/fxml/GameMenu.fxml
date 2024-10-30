@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.menuController.GameMenuController" fx:id="rootPane">
+    <children>
+        <Button fx:id="twoPlayerModeButton" layoutX="100" layoutY="50" text="Two-Player Mode" onMouseClicked="#gotoTwoPlayerMode"/>
+        <Button fx:id="bettingModeButton" layoutX="100" layoutY="100" text="Betting Mode" onMouseClicked="#gotoBettingMode"/>
+        <Button fx:id="singlePlayerModeButton" layoutX="100" layoutY="150" text="Single-Player Mode" onMouseClicked="#gotoSinglePlayerMode"/>
+        <Button fx:id="backButton" layoutX="100" layoutY="200" text="Back" onMouseClicked="#goBack"/>
+    </children>
+</AnchorPane>

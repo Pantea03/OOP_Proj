@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.menuController.SettingMenuController">
+    <children>
+        <!-- Settings UI Components -->
+        <Label layoutX="50.0" layoutY="50.0" text="Settings" />
+        <CheckBox fx:id="musicCheckbox" layoutX="50.0" layoutY="100.0" text="Enable Music" />
+        <CheckBox fx:id="soundEffectsCheckbox" layoutX="50.0" layoutY="150.0" text="Enable Sound Effects" />
+        <ComboBox fx:id="themeComboBox" layoutX="50.0" layoutY="200.0" prefWidth="150.0" />
+        <Slider fx:id="volumeSlider" layoutX="50.0" layoutY="250.0" prefWidth="150.0" min="0.0" max="1.0" value="0.5" />
+        <ComboBox fx:id="backgroundComboBox" layoutX="250.0" layoutY="250.0" prefWidth="150.0" />
+        <Button layoutX="50.0" layoutY="300.0" mnemonicParsing="false" onAction="#applySettings" text="Apply Settings">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+        <Button layoutX="200.0" layoutY="300.0" mnemonicParsing="false" onAction="#cancelSettings" text="Back">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>
